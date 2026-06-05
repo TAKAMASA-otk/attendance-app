@@ -4,9 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Attendance;
+use App\Models\CorrectionBreakTime;
 
 class StampCorrectionRequest extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'user_id',
         'attendance_id',
@@ -26,8 +30,11 @@ class StampCorrectionRequest extends Model
         return $this->belongsTo(Attendance::class);
     }
 
-    public function breakTimes()
+    public function correctionBreakTimes()
     {
-        return $this->hasMany(CorrectionBreakTime::class, 'correction_id');
+        return $this->hasMany(
+            CorrectionBreakTime::class,
+            'correction_id'
+        )->orderBy('id', 'asc');
     }
 }

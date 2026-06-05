@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background-color: #e5e5e5;
+}
+
+.header {
+    background: #000;
+    height: 48px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 28px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.header-nav a,
+.header-nav button {
+    color: #fff;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-nav form {
+    margin: 0;
+}
+
+.header-inner {
+    height: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 30px;
+    display: block;
+}
+
+main {
+    min-height: calc(100vh - 60px);
+}

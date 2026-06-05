@@ -18,27 +18,27 @@ Laravelで作成した勤怠管理アプリです。
 
 ## 一般ユーザー
 
-・会員登録
-・ログイン／ログアウト
-・メール認証
-・出勤打刻
-・休憩開始
-・休憩終了
-・退勤打刻
-・勤怠一覧表示
-・勤怠詳細表示
-・勤怠修正申請
-・申請一覧表示
+- 会員登録
+- ログイン／ログアウト
+- メール認証
+- 出勤打刻
+- 休憩開始
+- 休憩終了
+- 退勤打刻
+- 勤怠一覧表示
+- 勤怠詳細表示
+- 勤怠修正申請
+- 申請一覧表示
 
 ## 管理者
 
-・管理者ログイン
-・日次勤怠一覧表示
-・スタッフ一覧表示
-・スタッフ別勤怠一覧表示
-・勤怠詳細表示
-・修正申請一覧表示
-・修正申請承認
+- 管理者ログイン
+- 日次勤怠一覧表示
+- スタッフ一覧表示
+- スタッフ別勤怠一覧表示
+- 勤怠詳細表示
+- 修正申請一覧表示
+- 修正申請承認
 
 ---
 
@@ -111,7 +111,8 @@ DB_PASSWORD=laravel_pass
 MAIL_MAILER=smtp
 MAIL_HOST=mailhog
 MAIL_PORT=1025
-MAIL_FROM_ADDRESS=test@example.com MAIL_FROM_NAME="Attendance App"
+MAIL_FROM_ADDRESS=test@example.com
+MAIL_FROM_NAME="Attendance App"
 
 APP_TIMEZONE=Asia/Tokyo
 ```
@@ -164,28 +165,28 @@ docker compose exec php php artisan test
 
 # ディレクトリ構成
 
-```
-app
- ├ Http
- │  ├ Controllers
- │  └ Requests
- └ Models
-
-database
- ├ migrations
- └ seeders
-
-resources
- └ views
-
-public
- ├ css
- └ images
-
-routes
- └ web.php
-
-tests
+```text
+attendance-app
+├── docker
+├── docs
+├── src
+│   ├── app
+│   │   ├── Http
+│   │   │   ├── Controllers
+│   │   │   └── Requests
+│   │   └── Models
+│   ├── database
+│   │   ├── migrations
+│   │   └── seeders
+│   ├── public
+│   │   ├── css
+│   │   └── images
+│   ├── resources
+│   │   └── views
+│   ├── routes
+│   │   └── web.php
+│   └── tests
+└── README.md
 ```
 ---
 
