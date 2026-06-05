@@ -89,7 +89,6 @@ docker-compose exec php bash
 ## 4. Laravelセットアップ
 
 ```
-cd src
 composer install
 cp .env.example .env
 php artisan key:generate
