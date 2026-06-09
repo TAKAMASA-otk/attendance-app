@@ -81,7 +81,7 @@ docker compose up -d --build
 ## 3. コンテナに入る
 
 ```
-docker-compose exec php bash
+docker compose exec php bash
 ```
 
 ---
@@ -128,7 +128,7 @@ http://localhost
 
 ## 管理者ユーザー
 メールアドレス：admin@example.com
-パスワード：password
+パスワード：password123
 
 ## 一般ユーザー
 メールアドレス：user@example.com
